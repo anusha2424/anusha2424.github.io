@@ -65,10 +65,16 @@
         justify-content: space-between;
       }
 
-      input {
-        padding: 10px;
+      label {
         margin: 10px 0;
         width: 48%;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
       }
 
       button {
@@ -124,9 +130,15 @@
     <section>
       <h2>Contact Us</h2>
       <form>
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea placeholder="Your Message"></textarea>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Your Email" />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+
         <button type="submit">Send Message</button>
       </form>
     </section>
