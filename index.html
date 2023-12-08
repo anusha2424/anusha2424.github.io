@@ -77,9 +77,9 @@
             margin: 10px 0;
             width: 48%;
             color: #333;
-            background-color: #f5f5f5; /* Background color for better contrast */
-            border: 1px solid #ccc; /* Add a border for better visibility */
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
         }
 
         textarea {
@@ -88,7 +88,7 @@
 
         button {
             padding: 10px;
-            background-color: #008CBA; /* Updated button color for better contrast */
+            background-color: #008CBA;
             color: white;
             border: none;
             cursor: pointer;
@@ -96,7 +96,7 @@
         }
 
         button:hover {
-            background-color: #005F80; /* Darker shade on hover for better visibility */
+            background-color: #005F80;
         }
     </style>
 </head>
@@ -145,13 +145,13 @@
         <h2>Contact Us</h2>
         <form>
             <label for="name">Your Name:</label>
-            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="name" name="name" placeholder="Your Name">
 
             <label for="email">Your Email:</label>
-            <input type="email" id="email" placeholder="Your Email">
+            <input type="email" id="email" name="email" placeholder="Your Email">
 
             <label for="message">Your Message:</label>
-            <textarea id="message" placeholder="Your Message"></textarea>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
 
             <button type="submit">Send Message</button>
         </form>
